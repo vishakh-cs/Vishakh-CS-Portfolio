@@ -1,4 +1,5 @@
 // components/Home.js
+"use client"
 import Image from 'next/image';
 import React from 'react';
 import { FaFileDownload } from 'react-icons/fa';
@@ -13,47 +14,55 @@ import docker from '../public/docker.jpg';
 import firebase from '../public/firebase.jpg';
 import mongo from '../public/mongo.jpg';
 import tailwind from '../public/tailwind.jpg';
+import { ContactDialog } from '@/Components/shadcn/Dialog';
+
 
 function Home() {
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = "/Vishakh CS resume.pdf";
+    link.download = 'Vishakh_CS_resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="relative" style={{ fontFamily: 'Maven Pro, sans-serif' }}>
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 flex flex-col">
-          {[...Array(50)].map((_, index) => (
-            <div
-              key={index}
-              className="absolute rounded-full bg-white opacity-20"
-              style={{
-                width: '10px',
-                height: '10px',
-                animation: `moveDots 4s linear infinite`,
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 10}s`,
-              }}
-            />
-          ))}
-        </div>
+    <div className="absolute inset-0 overflow-hidden z-0">
+      <div className="absolute inset-0 flex flex-col">
+        {[...Array(50)].map((_, index) => (
+          <div
+            key={index}
+            className="absolute rounded-full bg-white opacity-20"
+            style={{
+              width: '10px',
+              height: '10px',
+              animation: `moveDots 4s linear infinite`,
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 10}s`,
+            }}
+          />
+        ))}
       </div>
-
-      <div className="flex justify-center items-center h-screen">
-        <div className="w-full sm:w-2/3 flex flex-col sm:flex-row">
-          <div className="w-full sm:w-1/2 flex justify-center items-center">
-            <div className="text-center sm:text-right sm:pr-8 mb-4 sm:mb-0">
-              <p className="text-lg md:text-xl lg:text-2xl">Hi, I'm Vishakh C S</p>
-              <p className="text-lg md:text-xl lg:text-2xl">Software Developer</p>
-              <div className="mt-4 flex justify-center items-center">
-                <a
-                  href="/path/to/resume.pdf"
-                  download="Vishakh_C_S_Resume.pdf"
-                  className="flex items-center text-white border border-white rounded py-2 px-4 mr-4 hover:bg-white hover:text-blue-600"
-                >
-                  <FaFileDownload className="mr-2" />
-                  Resume
-                </a>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  Contact
-                </button>
+    </div>
+  
+    <div className="flex justify-center items-center h-screen z-10 relative">
+      <div className="w-full sm:w-2/3 flex flex-col sm:flex-row">
+        <div className="w-full sm:w-1/2 flex justify-center items-center">
+          <div className="text-center sm:text-right sm:pr-8 mb-4 sm:mb-0">
+            <p className="text-lg md:text-xl lg:text-2xl">Hi, I'm Vishakh C S</p>
+            <p className="text-lg md:text-xl lg:text-2xl">Software Developer</p>
+            <div className="mt-4 flex justify-center items-center cursor-pointer">
+              <button
+                onClick={handleDownload}
+                className="flex items-center text-white border border-white rounded py-2 px-4 mr-4 hover:bg-white hover:text-blue-600 z-20"
+              >
+                <FaFileDownload className="mr-2" />       
+                Resume
+              </button>
+              <ContactDialog />
               </div>
 
             </div>

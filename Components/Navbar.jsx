@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="text-white font-semibold ml-5" style={{ fontFamily: 'Pacifico' }}>Vishakh CS</div>
         <div className="flex space-x-4 mr-5">
           <a
-            href="https://github.com/your-github-profile"
+            href="https://github.com/vishakh-cs"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white"
@@ -22,7 +22,7 @@ const Navbar = () => {
             <FaGithub className="w-6 h-6" />
           </a>
           <a
-            href="https://www.linkedin.com/in/your-linkedin-profile"
+            href="https://www.linkedin.com/in/vishakh-cs/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white"
