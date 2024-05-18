@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
+} from "@/Components/ui/dialog"
 
 export function ContactDialog() {
   const emailAddress = "Vishakhcs51@gmail.com";
