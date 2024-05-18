@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/dialog";
 
 export function ContactDialog() {
-
   const emailAddress = "Vishakhcs51@gmail.com";
   return (
     <Dialog>
