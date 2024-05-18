@@ -14,8 +14,9 @@ import docker from '../public/docker.jpg';
 import firebase from '../public/firebase.jpg';
 import mongo from '../public/mongo.jpg';
 import tailwind from '../public/tailwind.jpg';
-import { ContactDialog } from '@/Components/shadcn/Dialog';
+
 import Projects from '@/Components/Projects';
+import { ContactDialog } from '@/Components/Dialog';
 
 
 function Home() {
