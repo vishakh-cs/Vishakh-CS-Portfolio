@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Mock project data
 const projects = [
   { id: 1, image: '/Screenshot 2024-05-17 224241.png', title: 'Fit-tone', discription: "Developed and maintained Fit-Tone, a comprehensive fitness tracker application enabling users to monitor their fitness progress and achieve their health objectives effectively." },
   { id: 2, image: '/Screenshot 2024-05-17 223520.png', title: 'Generative', discription: "Generative is a collaborative workspace platform designed to facilitate seamless collaboration, document creation, and content publishing. Powered by Next.js, React, and Node.js Express, it offers robust features for teams to work together effectively and efficiently." },
