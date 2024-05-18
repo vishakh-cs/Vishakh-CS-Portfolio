@@ -201,7 +201,7 @@ function Home() {
           </div>
           {/* Education 2 */}
           <div className="bg-gray-400 p-6 rounded-lg shadow-md mb-8">
-            <h3 className="text-xl font-semibold mb-2">2019 - 2023</h3>
+            <h3 className="text-xl font-semibold mb-2">2020 - 2023</h3>
             <h2 className='capitalize font-bold'>Bachelor of Science in Computer Science</h2>
             <h3 className='font-bold'>-Kerala University</h3>
           </div>
