@@ -15,6 +15,7 @@ import firebase from '../public/firebase.jpg';
 import mongo from '../public/mongo.jpg';
 import tailwind from '../public/tailwind.jpg';
 import { ContactDialog } from '@/Components/shadcn/Dialog';
+import Projects from '@/Components/Projects';
 
 
 function Home() {
@@ -183,9 +184,11 @@ function Home() {
           </div>
 
         </div>
-
-
       </div>
+
+       <Projects />
+
+
       <div className="py-10">
         <div className="max-w-6xl mx-auto px-4 text-black">
           <h2 className="text-3xl font-extrabold mb-6 text-blue-400">My Timeline</h2>
