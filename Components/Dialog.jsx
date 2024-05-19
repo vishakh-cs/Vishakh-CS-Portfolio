@@ -23,8 +23,8 @@ export function ContactDialog() {
           <DialogDescription >{emailAddress}</DialogDescription>
         </DialogHeader>
         <DialogFooter>
-       <a href={`mailto:${emailAddress}`} className="bg-green-500 hover:bg-green-700 cursor-pointer text-white font-bold py-2 px-4 text-center rounded">
-              OK
+       <a href={`mailto:${emailAddress}`} className="bg-green-500 hover:bg-green-700 cursor-pointer text-white font-bold mt-9 py-2 px-4 text-center rounded">
+         Send Email
            </a>
         </DialogFooter>
       </DialogContent>
