@@ -12,7 +12,7 @@ const Navbar = () => {
       />
       <nav className="bg-black p-4 flex justify-between items-center">
         <div className="text-white font-semibold ml-5" style={{ fontFamily: 'Pacifico' }}>Vishakh CS</div>
-        <div className="flex space-x-4 mr-5">
+        <div className="icon-container flex space-x-4 mr-5">
           <a
             href="https://github.com/vishakh-cs"
             target="_blank"

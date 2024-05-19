@@ -93,3 +93,9 @@ body {
     opacity: 0.5; /* Darken the ending side */
   }
 }
+
+
+.icon-container {
+  display: flex;
+  justify-content: flex-end; 
+}
